@@ -110,7 +110,7 @@ class JsonAdaptedPerson {
 
         final Address modelAddress = new Address(address);
 
-        final Remark modelRemark = new Remark(""); // empty remark
+        final Remark modelRemark = new Remark(remark); // empty remark
 
         final Set<Tag> modelTags = new HashSet<>(personTags);
         return new Person(modelName, modelPhone, modelEmail, modelAddress, modelTags, modelRemark);
